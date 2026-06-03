@@ -1,0 +1,102 @@
+.resource-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  border-left: 4px solid;
+}
+
+.resource-item.gold {
+  border-left-color: #ffd700;
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.3));
+}
+
+.resource-icon {
+  font-size: 1.5em;
+}
+
+.resource-label {
+  color: #aaa;
+  flex: 1;
+}
+
+.resource-value {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.resource-section {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.resource-section h4 {
+  margin: 0 0 8px 0;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.units-list,
+.buildings-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.unit-item,
+.building-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.unit-icon,
+.building-icon {
+  font-size: 1.2em;
+}
+
+.unit-name,
+.building-name {
+  color: #ddd;
+  flex: 1;
+}
+
+.unit-count {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.economy-info {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.economy-info p {
+  margin: 0;
+}
+
+.economy-info strong {
+  color: #ffd700;
+}

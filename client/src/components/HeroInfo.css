@@ -1,0 +1,64 @@
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding: 12px;
+  border-left: 4px solid;
+}
+
+.your-hero-card {
+  border-left-color: #2ecc71;
+}
+
+.opponent-hero-card {
+  border-left-color: #e74c3c;
+}
+
+.hero-card h4 {
+  margin: 0 0 10px 0;
+  color: #ffd700;
+  font-size: 1em;
+}
+
+.hero-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 0.9em;
+  gap: 8px;
+}
+
+.hero-stat span:first-child {
+  color: #aaa;
+  min-width: 60px;
+}
+
+.hero-stat span:last-child {
+  color: #fff;
+  font-weight: bold;
+}
+
+.health-bar {
+  flex: 1;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.health-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  transition: width 0.3s;
+}
+
+.health-fill.opponent {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
